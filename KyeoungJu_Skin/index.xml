@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>KyeoungJu_Dev</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ KyeoungJu 티스토리 개발용 스킨입니다. ]]>
+		</description>
+		<license>
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+</skin>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- https://tistory.github.io/document-tistory-skin/common/index.xml.html  티스토리 스킨 가이드-->
+<!-- 헤더 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <title>[##_page_title_##]</title>  <!-- 드디어 에러찾았네 -->
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./images/event.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3712073515065828" crossorigin="anonymous"></script>
+</head>
+
+<!-- 바디 -->
+<body id="[##_body_id_##]">
+    <s_t3><!-- 티스토리 자바 스크립트 -->
+        <div id="container">
+            <div id="sidebar">
+                <div class="profile_img">
+                    <img src="[##_image_##]" alt="프로필이미지">
+                </div>
+                <p class="profile_title">
+                     <!--[##_title_##]--> Dev_Portfolio
+                </p>
+
+                <p class="profile_desc">
+                    <a href="[##_blog_link_##]">
+                        <!--[##_desc_##]--> Kyeoung_Ju
+                    </a>
+                </p>
+
+                <div id="icon_box">
+                    <div class="icon_github">
+                        <img src="./images/ico_github.png" alt="깃허브이미지">
+                        <a href="https://github.com/kj1241" target="_blank">
+                            kj1241
+                        </a>
+                    </div>
+                     
+                    <div class="icon_setting">
+                        <img src="./images/ico_setting.png" alt="아이콘세팅">
+                        <a href="[##_owner_url_##]" target="_blank">
+                            설정
+                        </a>
+                    </div>
+
+                    <div class="icon_write">
+                        <img src="./images/ico_write.png" alt="글쓰기">
+                        <a href="[##_owner_url_##]/entry/post" target="_self">
+                            글쓰기
+                        </a>
+                    </div>
+                </div>
+                
+                <s_sidebar_element>
+                    <!-- 검색 -->
+                    <div id="search">
+                        <div class="icon_search">
+                            <button  type="button">
+                                <img src="./images/ico_search.png" alt="검색하기"> 
+                            </button>
+                            <span>
+                            <!--검색엔진--> 
+                            </span>
+                            <s_search>
+                                <!--티스토리 검색 엔진-->
+                                <input class="searchbar" placeholder="검색하세요" type="text" name="[##_search_name_##]"value="[##_search_text_##]"onkeypress="
+                                if (event.keyCode == 13) { [##_search_onclick_submit_##] }" />
+                                <span onclick="[##_search_onclick_submit_##]" >
+                                
+                                </span>
+                            </s_search>
+                        </div>
+                    </div>
+
+                    <!-- 방문자수 -->
+                    <div class="visitor">
+                        <p class="total">[##_count_total_##] <span>총합</span></p>
+                        <p class="yesterday"> [##_count_yesterday_##] <span>어제</span></span>
+                        <p class="today">[##_count_today_##] <span>오늘</span></span>
+                    </div>
+
+                    <!-- 카테고리 -->
+                    <div class="category">
+                            [##_category_list_##]
+                    </div>
+                </s_sidebar_element>
+            </div><!-- sidebar close -->
+
+        
+            <dlv id="main_contents">
+                <div id="content">
+                    <s_list>
+						<div class="list_title">
+							<h2 id="skin_title" class="tit_skin">
+                                <span class="screen_out">
+                                    목록
+                                </span>
+                                <span class="txt_title">
+                                    [##_list_conform_##] ([##_list_count_##])
+                                </span>
+                            </h2>
+						</div>
+					</s_list>
+
+                    <s_article_rep>
+						<s_index_article_rep>
+							<div id="list_content">
+								<s_article_rep_thumbnail>
+									<a href="[##_article_rep_link_##]" class="thumbnail_post">
+                                        <img src="//i1.daumcdn.net/thumb/C150x150/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="포스트메인이미지">
+                                    </a>
+								</s_article_rep_thumbnail>
+
+								<a href="[##_article_rep_link_##]" class="link_post">
+									<strong class="tit_post ">
+                                        [##_article_rep_title_##]
+                                    </strong>
+									<p class="txt_post">
+                                        [##_article_rep_summary_##]
+                                    </p>
+								</a>
+								<div class="detail_info">
+									<a href="[##_article_rep_category_link_##]" class="link_cate">
+                                        [##_article_rep_category_##]
+                                    </a>
+									<span class="txt_bar">
+                                    </span>
+									<span class="txt_date">
+                                        [##_article_rep_date_##]
+                                    </span>
+								</div>
+							</div>
+						</s_index_article_rep>
+
+                        <!-- 에러찾음2 여기에 작성해야 다음 페이지 넘길때 넘어갈수 있습니다. -->
+                        <s_permalink_article_rep>
+                            <!--이 부분 왜있나 했더니 리버스엔지니어링 해보니 홈에 안보이게 하려고 있는 부분-->
+                            <h2 id="article_main" class="screen_out">
+                                [##_article_rep_title_##] 본문
+                            </h2>
+    
+                            <div id="article_modify">
+                                <strong class="tit_category">
+                                    <a href="[##_article_rep_category_link_##]">
+                                        [##_article_rep_category_##]
+                                    </a>
+                                </strong>
+    
+                                <h3 class="tit_post">
+                                    [##_article_rep_title_##]
+                                </h3>
+    
+                                <span class="info_post">
+                                    [##_article_rep_author_##]
+                                    <span class="txt_bar">
+                                    </span>
+                                    [##_article_rep_date_##]
+                                    <s_ad_div>
+                                        <span class="txt_bar">
+                                        </span>
+                                        <a href="[##_s_ad_m_link_##]" class="link_detail">
+                                            수정
+                                        </a>
+                                        <span class="txt_bar">
+                                        </span>
+                                        <a href="#" onclick="[##_s_ad_s2_onclick_##]" class="link_detail">
+                                            [##_s_ad_s1_label_##]
+                                        </a>
+                                        <span class="txt_bar">
+                                        </span>
+                                        <a href="#" onclick="[##_s_ad_d_onclick_##]" class="link_detail">
+                                            삭제
+                                        </a>
+                                    </s_ad_div>
+                                </span> 
+                            </div>
+    
+                            <div id="article_area_view">
+                                [##_article_rep_desc_##]
+                            </div>
+                            <div id="article_etc">
+                                <s_tag_label>
+                                    <dl class="list_tag">
+                                        <dt>Tag</dt>
+                                        <dd>[##_tag_label_rep_##]</dd>
+                                    </dl>
+                                </s_tag_label>
+                            </div>
+                        </s_permalink_article_rep>
+
+
+                    </s_article_rep>
+
+                </div>
+
+                <s_paging>
+                    <div id="paging">
+                        <a [##_prev_page_##] class="[##_no_more_prev_##]">◀ PREV </a>
+                        <span class="numbox">
+                            <s_paging_rep>
+                                <a [##_paging_rep_link_##] class="num">[[##_paging_rep_link_num_##]]</a>
+                            </s_paging_rep>
+                        </span>
+                        <a [##_next_page_##] class="[##_no_more_next_##]">NEXT ▶</a>
+                    </div>
+                </s_paging>
+
+                <div class="non-paging"></div>
+            
+            
+            </dlv><!-- main_contents close -->
+
+            <!-- 오른쪽 사이드 베너 -->
+            <div id="right_sidebar">
+                <!-- 티스토리 사이드 광고 -->
+                <div class="ad_sidebar">
+                    <s_sidebar>
+                    </s_sidebar>
+                    <!-- 광고예시 -->
+                    <img src="./images/ico_AdSense.png" alt="구글에드센스">
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3712073515065828" data-ad-slot="1121902605" data-ad-format="auto" data-full-width-responsive="true">
+                    </ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            <dlv>
+        </div>
+    </s_t3>
+    
+</body>
+</html>
