@@ -692,6 +692,8 @@ strong {
   font-size: 30px;
 }
 
+article_view{}
+
 /* #article_view {
   max-width: 700px;
   margin: 80px auto 0 auto;
@@ -719,19 +721,19 @@ strong {
 #article_view h1 {
   font-size: 32px;
   line-height: 1.33;
-  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.3);
+  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.1);
 }
 
 #article_view h2 {
   font-size: 24px;
   line-height: 1.38;
-  text-shadow: 2px 2px 4px rgba(235, 235, 235, 1);
+  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.1);
 }
 
 #article_view h3 {
   font-size: 20px;
   line-height: 1.4;
-  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.3);
+  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.1);
 
 
 }
@@ -739,7 +741,7 @@ strong {
 #article_view h4 {
   font-size: 18px;
   line-height: 1.33;
-  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.3);
+  text-shadow: 2px 2px 4px rgba(235, 235, 235, 0.1);
 }
 
 #article_view h5 {
@@ -849,7 +851,7 @@ strong {
 
 #article_view a {
   display: inline-block;
-  color: blue;
+  color: rgb(121, 121, 214);
 }
 
 #article_view a:hover {
